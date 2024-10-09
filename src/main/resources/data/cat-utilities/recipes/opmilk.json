@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "#M#",
+        "DnD"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:paper"
+        },
+        "G": {
+            "item": "minecraft:gold_nugget"
+        },
+        "M": {
+            "item": "cat-utilities:milk"
+        },
+        "D": {
+            "item": "minecraft:golden_apple"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        }
+    },
+    "result": {
+        "item": "cat-utilities:opmilk",
+        "count": 1
+    }
+}

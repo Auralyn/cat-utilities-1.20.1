@@ -1,8 +1,9 @@
 {
-  "item.cat-utilities.oracle": "The Oracle",
+  "item.cat-utilities.tnt_cannon": "Portable TNT Cannon",
   "item.cat-utilities.redball": "Red Ball",
   "item.cat-utilities.sentience": "Sentience",
   "item.cat-utilities.milk": "Milk",
+  "item.cat-utilities.opmilk": "OP Milk",
 
   "itemGroup.cat-utilities": "Cat Utilities"
 }
