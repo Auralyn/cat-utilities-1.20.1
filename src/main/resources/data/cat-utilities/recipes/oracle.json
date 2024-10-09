@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "cat-utilities:redball"
+    },
+    {
+      "item": "cat-utilities:sentience"
+    }
+  ],
+  "result": {
+    "item": "cat-utilities:oracle",
+    "count": 1
+  }
+}
+
