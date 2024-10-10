@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cat-utilities:block/milk"
+		},
+		"facing=south": {
+			"model": "cat-utilities:block/milk",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cat-utilities:block/milk",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "cat-utilities:block/milk",
+			"y": 90
+		}
+	}
+}

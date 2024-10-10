@@ -1,6 +1,7 @@
 package arson.lynn.cat.item;
 
 import arson.lynn.cat.CatUtilities;
+import arson.lynn.cat.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -13,12 +14,13 @@ public class ModItemGroups {
     public static final ItemGroup CAT_UTILITIES = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CatUtilities.MOD_ID, "cat-utilities"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.cat-utilities"))
-                    .icon(() -> new ItemStack(ModItems.MILK)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.MILK)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TNTCANNON);
                         entries.add(ModItems.REDBALL);
                         entries.add(ModItems.SENTIENCE);
-                        entries.add(ModItems.MILK);
                         entries.add(ModItems.OPMILK);
+
+                        entries.add(ModBlocks.MILK);
                     }).build());
 
     public static void registerItemGroups() {

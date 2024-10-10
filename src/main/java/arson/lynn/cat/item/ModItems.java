@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 public class ModItems {
     public static final Item TNTCANNON = registerItem("tnt_cannon", new TntCannonItem(new FabricItemSettings().maxDamage(385 * 2)));
     public static final Item REDBALL = registerItem("redball", new Item(new FabricItemSettings()));
-    public static final Item MILK = registerItem("milk", new Item(new FabricItemSettings().rarity(Rarity.EPIC).food(
+    /*public static final Item MILK = registerItem("milk", new Item(new FabricItemSettings().rarity(Rarity.EPIC).food(
             new FoodComponent.Builder()
                     .alwaysEdible()
                     .hunger(2)
@@ -54,7 +54,7 @@ public class ModItems {
         public UseAction getUseAction(ItemStack stack) {
             return UseAction.DRINK; // Change the action to drinking
         }
-    });
+    });*/
 
     public static final Item OPMILK = registerItem("opmilk", new Item(new FabricItemSettings().rarity(Rarity.EPIC).food(
             new FoodComponent.Builder()
@@ -70,6 +70,9 @@ public class ModItems {
         @Override
         public int getMaxUseTime(ItemStack stack) {
             return 64; // Modify this value to change the eating duration
+        }
+        public boolean hasEffect(ItemStack stack) {
+            return true; // Modify this value to change the eating duration
         }
         @Override
         public SoundEvent getDrinkSound() {
@@ -102,7 +105,6 @@ public class ModItems {
         entries.add(TNTCANNON);
         entries.add(REDBALL);
         entries.add(SENTIENCE);
-        entries.add(MILK);
         entries.add(OPMILK);
     }
 

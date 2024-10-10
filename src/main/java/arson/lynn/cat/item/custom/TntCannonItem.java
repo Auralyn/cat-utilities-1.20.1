@@ -16,6 +16,7 @@ import net.minecraft.util.UseAction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraft.world.explosion.Explosion;
 import org.joml.Matrix3f;
 
 public class TntCannonItem extends Item {
@@ -48,12 +49,11 @@ public class TntCannonItem extends Item {
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
                     SoundEvents.BLOCK_DISPENSER_DISPENSE, SoundCategory.PLAYERS, 1.0F, 1.0F);
             // Spawn the lightning bolt.
-            int n = 256;
+            int n = 12;
             double radius = 10f;
             Vec3d vector = new Vec3d(radius, 0f, 0f);
             Vec3d center = new Vec3d(user.getX(), user.getY(), user.getZ());
             float angle = (float) Math.PI * 2 / (float) n;
-
             Vec3d[] points = new Vec3d[n];
             Random random = new Random();
             Matrix3f rotation = new Matrix3f().rotateZ(angle);
@@ -64,8 +64,8 @@ public class TntCannonItem extends Item {
                 float yaw = user.getYaw(); // Get player's yaw
                 float pitch = user.getPitch(); // Get player's pitch
 
-                float yawOffset = (random.nextFloat() - 0.5f) * 2; // Random offset between -10 and 10 degrees
-                float pitchOffset = (random.nextFloat() - 0.5f) * 2;
+                float yawOffset = (random.nextFloat() - 0.5f) * 20; // Random offset between -10 and 10 degrees
+                float pitchOffset = (random.nextFloat() - 0.5f) * 20;
 
                 yaw += yawOffset;
                 pitch += pitchOffset;
