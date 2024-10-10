@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cat-utilities:block/potion_terracotta"
+		},
+		"facing=south": {
+			"model": "cat-utilities:block/potion_terracotta",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cat-utilities:block/potion_terracotta",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "cat-utilities:block/potion_terracotta",
+			"y": 90
+		}
+	}
+}

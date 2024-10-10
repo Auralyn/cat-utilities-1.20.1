@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.OPMILK);
 
                         entries.add(ModBlocks.MILK);
+                        entries.add(ModBlocks.POTION_TERRACOTTA);
                     }).build());
 
     public static void registerItemGroups() {

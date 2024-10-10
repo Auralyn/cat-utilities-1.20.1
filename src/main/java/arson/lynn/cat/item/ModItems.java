@@ -1,10 +1,13 @@
 package arson.lynn.cat.item;
 
 import arson.lynn.cat.CatUtilities;
+import arson.lynn.cat.block.custom.MilkBlock;
+import arson.lynn.cat.item.custom.MilkBlockItem;
 import arson.lynn.cat.item.custom.TntCannonItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -99,7 +102,6 @@ public class ModItems {
         }
     });
     public static final Item SENTIENCE = registerItem("sentience", new Item(new FabricItemSettings()));
-
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TNTCANNON);

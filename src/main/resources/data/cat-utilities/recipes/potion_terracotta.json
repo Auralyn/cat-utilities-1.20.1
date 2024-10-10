@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" # ",
+		"WGW",
+		"V/V"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:cyan_glazed_terracotta"
+		},
+		"W": {
+			"item": "minecraft:warped_stem"
+		},
+		"G": {
+			"item": "minecraft:glass_bottle"
+		},
+		"V": {
+			"item": "minecraft:warped_planks"
+		},
+		"/": {
+			"item": "minecraft:blaze_rod"
+		}
+	},
+	"result": {
+		"item": "cat-utilities:potion_terracotta",
+		"count": 2
+	}
+}

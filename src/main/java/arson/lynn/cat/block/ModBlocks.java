@@ -1,7 +1,8 @@
 package arson.lynn.cat.block;
 
 import arson.lynn.cat.CatUtilities;
-import arson.lynn.cat.item.ModItems;
+import arson.lynn.cat.block.custom.MilkBlock;
+import arson.lynn.cat.block.custom.Potion_TerracottaBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -16,7 +17,10 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block MILK = registerBlock("milk",
-            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.WOOL).nonOpaque()));
+            new MilkBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.WOOL).nonOpaque()));
+
+    public static final Block POTION_TERRACOTTA = registerBlock("potion_terracotta",
+            new Potion_TerracottaBlock(FabricBlockSettings.copyOf(Blocks.CYAN_GLAZED_TERRACOTTA).sounds(BlockSoundGroup.NETHER_WOOD)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

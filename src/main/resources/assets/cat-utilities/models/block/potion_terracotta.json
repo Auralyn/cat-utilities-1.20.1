@@ -1,0 +1,8 @@
+{
+	"parent": "block/cube_bottom_top",
+	"textures": {
+		"bottom": "cat-utilities:block/glazed_terracotta_potion_block_down",
+		"side": "cat-utilities:block/glazed_terracotta_potion_block",
+		"top": "cat-utilities:block/glazed_terracotta_potion_block_top"
+	}
+}
