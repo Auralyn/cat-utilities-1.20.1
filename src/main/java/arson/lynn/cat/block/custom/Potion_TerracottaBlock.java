@@ -102,12 +102,12 @@ public class Potion_TerracottaBlock extends Block {
                 }
             }
             else {
-                return ActionResult.SUCCESS; // Allow other interactions, like placing blocks next to it
+                return ActionResult.PASS; // Allow other interactions, like placing blocks next to it
             }
         }
 
 
 
-        return ActionResult.SUCCESS;
+        return ActionResult.PASS;
     }
 }

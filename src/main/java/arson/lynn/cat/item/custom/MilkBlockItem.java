@@ -17,19 +17,18 @@ public class MilkBlockItem extends BlockItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        ItemStack itemStack = player.getStackInHand(hand);
+        // Check if the player is sneaking (holding Shift)
+        if (player.isSneaking()) {
+            // If sneaking, allow placing the block by calling the default place behavior
+            return super.use(world, player, hand); // This calls the normal block placement logic
+        } else {
+            // If not sneaking, do something else (custom use logic)
+            if (!world.isClient) {
+                player.sendMessage(Text.of("You used the milk block in your hand!"), true);
 
-        // Message and consumption behavior
-        if (!world.isClient) {
-            player.sendMessage(Text.literal("You drank the milk block!"), false);
-
-            // Here you can also apply effects or additional logic
-            player.heal(4.0F);  // Example: heal the player when used
-
-            // Consume one item
-            itemStack.decrement(1);
+                // You can add any other custom behavior here
+            }
+            return TypedActionResult.success(player.getStackInHand(hand));
         }
-
-        return new TypedActionResult<>(ActionResult.SUCCESS, itemStack);
     }
 }
