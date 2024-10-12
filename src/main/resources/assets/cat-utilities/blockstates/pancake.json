@@ -1,0 +1,94 @@
+{
+	"variants": {
+		"milk_amount=1,facing=north": {
+			"model": "cat-utilities:block/pancake_states/pancake"
+		},
+		"milk_amount=2,facing=north": {
+			"model": "cat-utilities:block/pancake_states/pancake_two"
+		},
+		"milk_amount=3,facing=north": {
+			"model": "cat-utilities:block/pancake_states/pancake_three"
+		},
+		"milk_amount=4,facing=north": {
+			"model": "cat-utilities:block/pancake_states/pancake_four"
+		},
+		"milk_amount=5,facing=north": {
+			"model": "cat-utilities:block/pancake_states/pancake_five"
+		},
+		"milk_amount=6,facing=north": {
+			"model": "cat-utilities:block/pancake_states/pancake_six"
+		},
+		"milk_amount=1,facing=south": {
+			"model": "cat-utilities:block/pancake_states/pancake",
+			"y": 180
+		},
+		"milk_amount=2,facing=south": {
+			"model": "cat-utilities:block/pancake_states/pancake_two",
+			"y": 180
+		},
+		"milk_amount=3,facing=south": {
+			"model": "cat-utilities:block/pancake_states/pancake_three",
+			"y": 180
+		},
+		"milk_amount=4,facing=south": {
+			"model": "cat-utilities:block/pancake_states/pancake_four",
+			"y": 180
+		},
+		"milk_amount=5,facing=south": {
+			"model": "cat-utilities:block/pancake_states/pancake_five",
+			"y": 180
+		},
+		"milk_amount=6,facing=south": {
+			"model": "cat-utilities:block/pancake_states/pancake_six",
+			"y": 180
+		},
+		"milk_amount=1,facing=west": {
+			"model": "cat-utilities:block/pancake_states/pancake",
+			"y": 270
+		},
+		"milk_amount=2,facing=west": {
+			"model": "cat-utilities:block/pancake_states/pancake_two",
+			"y": 270
+		},
+		"milk_amount=3,facing=west": {
+			"model": "cat-utilities:block/pancake_states/pancake_three",
+			"y": 270
+		},
+		"milk_amount=4,facing=west": {
+			"model": "cat-utilities:block/pancake_states/pancake_four",
+			"y": 270
+		},
+		"milk_amount=5,facing=west": {
+			"model": "cat-utilities:block/pancake_states/pancake_five",
+			"y": 270
+		},
+		"milk_amount=6,facing=west": {
+			"model": "cat-utilities:block/pancake_states/pancake_six",
+			"y": 270
+		},
+		"milk_amount=1,facing=east": {
+			"model": "cat-utilities:block/pancake_states/pancake",
+			"y": 90
+		},
+		"milk_amount=2,facing=east": {
+			"model": "cat-utilities:block/pancake_states/pancake_two",
+			"y": 90
+		},
+		"milk_amount=3,facing=east": {
+			"model": "cat-utilities:block/pancake_states/pancake_three",
+			"y": 90
+		},
+		"milk_amount=4,facing=east": {
+			"model": "cat-utilities:block/pancake_states/pancake_four",
+			"y": 90
+		},
+		"milk_amount=5,facing=east": {
+			"model": "cat-utilities:block/pancake_states/pancake_five",
+			"y": 90
+		},
+		"milk_amount=6,facing=east": {
+			"model": "cat-utilities:block/pancake_states/pancake_six",
+			"y": 90
+		}
+	}
+}

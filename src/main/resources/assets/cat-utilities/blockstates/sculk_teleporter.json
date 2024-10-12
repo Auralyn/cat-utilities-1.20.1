@@ -1,7 +1,7 @@
 {
 	"variants": {
 		"": {
-			"model": "cat-utilities:block/potion_terracotta"
+			"model": "cat-utilities:block/sculk_teleporter"
 		}
 	}
 }

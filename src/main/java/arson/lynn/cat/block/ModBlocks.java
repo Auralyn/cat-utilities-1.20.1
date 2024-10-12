@@ -26,10 +26,14 @@ public class ModBlocks {
     public static final Block MILK = registerMilkBlock("milk",
             new MilkBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.WOOL).nonOpaque()));
 
+    public static final Block PANCAKE = registerMilkBlock("pancake",
+            new MilkBlock(FabricBlockSettings.copyOf(Blocks.GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
+
+
     public static final Block POTION_TERRACOTTA = registerBlock("potion_terracotta",
             new Potion_TerracottaBlock(FabricBlockSettings.copyOf(Blocks.SCULK_SHRIEKER).sounds(BlockSoundGroup.SCULK_SHRIEKER)));
 
-    public static final Block SCULK_TELEPORTER = registerBlock("sculk_teleporter.json",
+    public static final Block SCULK_TELEPORTER = registerBlock("sculk_teleporter",
             new Block(FabricBlockSettings
                     .copyOf(Blocks.SCULK_SHRIEKER)
                     .sounds(BlockSoundGroup.SCULK_SHRIEKER)

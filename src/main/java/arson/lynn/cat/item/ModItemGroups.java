@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TELEPORTERITEM);
 
                         entries.add(ModBlocks.MILK);
+                        //entries.add(ModBlocks.PANCAKE);
                         entries.add(ModBlocks.POTION_TERRACOTTA);
                         entries.add(ModBlocks.SCULK_TELEPORTER);
                     }).build());
