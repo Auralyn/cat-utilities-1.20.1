@@ -2,6 +2,7 @@ package arson.lynn.cat.block.custom;
 
 import arson.lynn.cat.CatUtilities;
 import arson.lynn.cat.block.ModBlocks;
+import arson.lynn.cat.item.ModItems;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,6 +17,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.IntProperty;
+import net.minecraft.state.property.Property;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -31,6 +33,7 @@ public class MilkBlock extends HorizontalFacingBlock {
 
     public static final int MAX_MILK_AMOUNT = 6;
     public static final IntProperty MILKS = IntProperty.of("milk_amount", 1, 6);
+
     private static VoxelShape SHAPE_1 = Block.createCuboidShape(6,0,6,10,9,10);
     private static VoxelShape SHAPE_2 = Block.createCuboidShape(3,0,6,13,9,10);
     private static VoxelShape SHAPE_3 = Block.createCuboidShape(3,0,3,13,9,13);
@@ -158,12 +161,13 @@ public class MilkBlock extends HorizontalFacingBlock {
             }
             return ActionResult.success(world.isClient);
         }
-        else if(player.getAbilities().allowModifyWorld && (player.getStackInHand(hand).isEmpty() || player.getStackInHand(hand).isOf(this.asItem())) && player.isSneaking()) {
+        else if(player.getAbilities().allowModifyWorld && (player.getStackInHand(hand).isEmpty() ||
+                player.getStackInHand(hand).isOf(Item.fromBlock(ModBlocks.MILK))) && player.isSneaking()) {
+            world.playSound(null, pos,
+                    SoundEvents.ENTITY_ITEM_PICKUP, // Replace with your custom sound event
+                    SoundCategory.BLOCKS, 1.0F, 1.0F);
             if (currentMilk > 1) {
                 // Decrease the number of candles
-                world.playSound(null, pos,
-                        SoundEvents.ENTITY_ITEM_PICKUP, // Replace with your custom sound event
-                        SoundCategory.BLOCKS, 1.0F, 1.0F);
                 world.setBlockState(pos, state.with(MILKS, currentMilk - 1));
                 player.giveItemStack(new ItemStack(ModBlocks.MILK));
             } else {

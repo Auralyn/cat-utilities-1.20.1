@@ -1,6 +1,7 @@
 package arson.lynn.cat;
 
 import arson.lynn.cat.block.ModBlocks;
+import arson.lynn.cat.enchantment.ModEnchantments;
 import arson.lynn.cat.item.ModItemGroups;
 import arson.lynn.cat.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -21,6 +22,7 @@ public class CatUtilities implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEnchantments.registerModEnchantments();
 
 		LOGGER.info("Cat Utilities has started!");
 	}

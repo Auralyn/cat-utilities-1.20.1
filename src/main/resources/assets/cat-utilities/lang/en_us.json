@@ -3,9 +3,14 @@
   "item.cat-utilities.redball": "Red Ball",
   "item.cat-utilities.sentience": "Sentience",
   "item.cat-utilities.opmilk": "OP Milk",
+  "item.cat-utilities.velocity_staff": "Staff of Velocity",
+  "item.cat-utilities.teleporter_item": "Sculk Shrieker Caller",
 
   "block.cat-utilities.milk": "Milk",
   "block.cat-utilities.potion_terracotta": "Potion Induced Glazed Terracotta",
+  "block.cat-utilities.sculk_teleporter": "Sculk Shrieker Teleporter",
+
+  "enchantment.cat-utilities.magical_power": "Magical Power",
 
   "itemGroup.cat-utilities": "Cat Utilities"
 }

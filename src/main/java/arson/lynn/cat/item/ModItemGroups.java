@@ -15,13 +15,16 @@ public class ModItemGroups {
             new Identifier(CatUtilities.MOD_ID, "cat-utilities"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.cat-utilities"))
                     .icon(() -> new ItemStack(ModBlocks.MILK)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.TNTCANNON);
+                        //entries.add(ModItems.TNTCANNON);
                         entries.add(ModItems.REDBALL);
                         entries.add(ModItems.SENTIENCE);
                         entries.add(ModItems.OPMILK);
+                        entries.add(ModItems.VELOCITY_STAFF);
+                        entries.add(ModItems.TELEPORTERITEM);
 
                         entries.add(ModBlocks.MILK);
                         entries.add(ModBlocks.POTION_TERRACOTTA);
+                        entries.add(ModBlocks.SCULK_TELEPORTER);
                     }).build());
 
     public static void registerItemGroups() {

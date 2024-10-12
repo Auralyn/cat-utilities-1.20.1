@@ -2,9 +2,11 @@ package arson.lynn.cat.item.custom;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.TntEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -19,9 +21,9 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 import org.joml.Matrix3f;
 
-public class TntCannonItem extends Item {
-    public TntCannonItem(Settings settings) {
-        super(settings);
+public class TntCannonItem extends BlockItem {
+    public TntCannonItem(Block block, Settings settings) {
+        super(block, settings);
     }
     @Override
     public UseAction getUseAction(ItemStack stack) {
