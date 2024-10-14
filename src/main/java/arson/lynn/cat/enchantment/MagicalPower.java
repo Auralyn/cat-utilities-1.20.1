@@ -21,4 +21,5 @@ public class MagicalPower extends Enchantment {
     public int getMaxLevel() {
         return 3;
     }
+
 }

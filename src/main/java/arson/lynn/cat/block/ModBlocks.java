@@ -6,9 +6,7 @@ import arson.lynn.cat.block.custom.Potion_TerracottaBlock;
 import arson.lynn.cat.item.custom.MilkBlockItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -24,11 +22,7 @@ import net.minecraft.util.Rarity;
 public class ModBlocks {
 
     public static final Block MILK = registerMilkBlock("milk",
-            new MilkBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.WOOL).nonOpaque()));
-
-    public static final Block PANCAKE = registerMilkBlock("pancake",
-            new MilkBlock(FabricBlockSettings.copyOf(Blocks.GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-
+            new MilkBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.WOOL).nonOpaque().strength(0.2f)));
 
     public static final Block POTION_TERRACOTTA = registerBlock("potion_terracotta",
             new Potion_TerracottaBlock(FabricBlockSettings.copyOf(Blocks.SCULK_SHRIEKER).sounds(BlockSoundGroup.SCULK_SHRIEKER)));

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "cat-utilities:sculk_teleporter",
+    "minecraft:sculk_shrieker"
+  ]
+}

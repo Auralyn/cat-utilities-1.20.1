@@ -2,6 +2,7 @@ package arson.lynn.cat.item;
 
 import arson.lynn.cat.CatUtilities;
 import arson.lynn.cat.item.custom.TeleporterItem;
+import arson.lynn.cat.item.custom.TntCannonItem;
 import arson.lynn.cat.item.custom.VelocityStaffItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -19,11 +20,8 @@ import net.minecraft.util.*;
 import net.minecraft.world.World;
 
 public class ModItems {
-    //public static final Item TNTCANNON = registerItem("tnt_cannon", new TntCannonItem(new FabricItemSettings().maxDamage(385 * 2)));
-    public static final Item REDBALL = registerItem("redball", new Item(new FabricItemSettings()));
-    //public static final Item MILK = registerItem("milk", new BlockItem(ModBlocks.MILK, new FabricItemSettings().rarity(Rarity.EPIC)));
-    //requires rewrite
 
+    //TBD
     public static final Item OPMILK = registerItem("opmilk", new Item(new FabricItemSettings().rarity(Rarity.EPIC).food(
             new FoodComponent.Builder()
                     .alwaysEdible()
@@ -66,15 +64,10 @@ public class ModItems {
             return UseAction.DRINK; // Change the action to drinking
         }
     });
-    public static final Item SENTIENCE = registerItem("sentience", new Item(new FabricItemSettings()));
-
     public static final Item VELOCITY_STAFF = registerItem("velocity_staff", new VelocityStaffItem(new FabricItemSettings().maxDamage(256)));
     public static final Item TELEPORTERITEM = registerItem("teleporter_item", new TeleporterItem(new FabricItemSettings().maxDamage(256)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        //entries.add(TNTCANNON);
-        entries.add(REDBALL);
-        entries.add(SENTIENCE);
         entries.add(OPMILK);
         entries.add(VELOCITY_STAFF);
         entries.add(TELEPORTERITEM);

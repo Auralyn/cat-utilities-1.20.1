@@ -17,6 +17,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.IntProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
@@ -30,9 +31,10 @@ import net.minecraft.world.WorldView;
 
 public class MilkBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-
     public static final int MAX_MILK_AMOUNT = 6;
-    public static final IntProperty MILKS = IntProperty.of("milk_amount", 1, 6);
+    public static final IntProperty MILKS = IntProperty.of("milk_amount", 1, MAX_MILK_AMOUNT);
+
+    //public static final IntProperty MILKS = IntProperty.of("candles", 1, 4);
 
     private static VoxelShape SHAPE_1 = Block.createCuboidShape(6,0,6,10,9,10);
     private static VoxelShape SHAPE_2 = Block.createCuboidShape(3,0,6,13,9,10);
@@ -181,6 +183,7 @@ public class MilkBlock extends HorizontalFacingBlock {
             return ActionResult.PASS;
         }
     }
+
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
